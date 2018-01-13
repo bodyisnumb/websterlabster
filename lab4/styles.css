@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+body {
+    font-family: "Segoe UI Light";
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    letter-spacing: 1.5px;
+    border-color: transparent;
+    margin: 0;
+}
+
+.navbar-inverse {
+    background-color: rgba(28, 43, 75, 1);
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: rgb(19, 24, 44);
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    background-color: rgb(19, 24, 44);
+}
+
+.navbar li:hover {
+    background-color: rgb(19, 24, 44);
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.logo-wrapper {
+    display: inline-block;
+    margin-top: -30px;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: .6px;
+}
+
+.logo-wrapper .logo {
+    margin-right: -15px;
+    padding-bottom: 3px;
+}
+
+@media(max-device-width: 720px){
+    .nameOfPage{
+        color: #000;
+        font-size: larger;
+        position: static;
+        margin-left: 50px;
+    }
+}
+
+h1 {
+    position: absolute;
+    top: 150px;
+    left: 18%;
+    color: white;
+    text-transform: uppercase;
+}
+
+h2 {
+     text-align: center;
+}
+
+#mask {
+    position: relative;
+    width: 100%;
+}
+
+#mask::after {
+    background: transparent;
+    background: linear-gradient(to bottom, rgba(28, 43, 75, 1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.main-text {
+    max-width: 50em;
+    margin: 80px auto;
+    color: #333;
+    letter-spacing: .5px;
+    text-align: justify;
+    line-height: 23px;
+}
+
+#left {
+    padding: 15px;
+}
+
+#right {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.label {
+    width: 94px;
+    margin-top: -1px;
+    margin-right: 8px;
+    display: block;
+    float: left;
+    font-size: 16px;
+    color: #333;
+    padding: 0;
+}
+
+.text {
+    margin-left: 102px;
+    display: block;
+}
+
+footer {
+    font-size: 90%;
+    display: block;
+    background-color: rgba(28, 43, 75, 1);
+    color: #fff;
+    height: 20px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    clear: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    visibility: visible;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(0);
+        opacity: 0.0;
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    80% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
